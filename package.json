@@ -7,7 +7,7 @@
     "prebuild": "rm -rf dist && mkdir dist",
     "build": "babel src/index.js -o dist/index.js",
     "test": "mocha -w --compilers js:babel-register",
-    "test:single": "istanbul cover -f _mocha -- -R spec"
+    "test:single": "istanbul cover -f _mocha -- -R spec --compilers js:babel-register"
   },
   "repository": {
     "type": "git",
